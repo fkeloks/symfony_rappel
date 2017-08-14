@@ -1,0 +1,24 @@
+posts_index:
+    path:     /
+    defaults: { _controller: "BlogBundle:Posts:index" }
+    methods:  GET
+
+posts_show:
+    path:     /show/{id}
+    defaults: { _controller: "BlogBundle:Posts:show" }
+    methods:  GET
+
+posts_new:
+    path:     /new
+    defaults: { _controller: "BlogBundle:Posts:new" }
+    methods:  [GET, POST]
+
+posts_edit:
+    path:     /edit/{id}
+    defaults: { _controller: "BlogBundle:Posts:edit" }
+    methods:  [GET, POST]
+
+posts_delete:
+    path:     /delete/{id}
+    defaults: { _controller: "BlogBundle:Posts:delete" }
+    methods:  GET
